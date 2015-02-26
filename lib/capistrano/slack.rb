@@ -12,6 +12,7 @@ module Capistrano
         'channel' => fetch(:slack_room),
         'username' => fetch(:slack_username, ''),
         'text' => announcement,
+        'icon_url' => fetch(:slack_icon_url, ''),
         'icon_emoji' => fetch(:slack_emoji, ''),
         'parse' => fetch(:slack_parse, '')
         }.to_json
